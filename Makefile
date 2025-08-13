@@ -6,7 +6,7 @@ all: clean build
 .PHONY: clean
 clean:
 	@echo Running clean job...
-	cd $(PROJECTROOT) && rm -rf bin/
+	cd $(PROJECTROOT) && rm -rf bin/ && rm -f tictactoe
 	go fmt ./...
 
 dep:
